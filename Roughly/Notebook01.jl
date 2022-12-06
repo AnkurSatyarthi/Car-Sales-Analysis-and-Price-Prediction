@@ -24,3 +24,43 @@ cars[:,Between(:year,:km_driven)]
 cars[:,Cols("name", Between("fuel","owner"))]
 using Statistics
 println("_____")
+plot()
+plot(4)
+plot(rand(10))
+plot(rand(10,5))
+plot(rand(10),rand(10))
+plot(rand(10,5), rand(10))
+plot(sin, rand(10))
+plot(rand(10),sin)
+plot([sin,cos],0:0,1:pi)
+plot([sin,cos],0,pi)
+plot(1:10, Any[rand(10),sin])
+plot(title="title",
+    xlabel="xlabel",
+    ylabel="ylabel")
+plot!(xlims=(0,5.5),
+    ylims=(-2.2,6),
+    xticks=0:0.5:10,
+    yticks=[0,1,5,10])
+X1 = cars.year
+Y1 = cars.selling_price
+plot(title="Relationship between years and selling prices",
+    xlabel="years",
+    ylabel="selling prices")
+x = range(0,10,length=100)
+y = sin.(x)
+plot(x,y)
+plot(X,Y)
+x = range(0,10,length=100)
+y1 = sin.(x)
+y2 = cos.(x)
+plot(x,[y1,y2])
+Y2 = cars.km_driven
+plot(X1, [Y1,Y2])
+plot(cars.owner,[cars.fuel])
+rsbysp = scatter(cars.year,cars.selling_price)
+savefig("Output/myplot.png")
+savefig(rsbysp, "Output/myplot.pdf")
+
+
+
