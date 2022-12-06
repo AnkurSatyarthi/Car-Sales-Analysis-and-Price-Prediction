@@ -1,6 +1,6 @@
-using CSV, DataFrames, MLJ, Plots, TypedTables
-
-cars = CSV.read("data/CAR DETAILS FROM CAR DEKHO.csv",DataFrame)
+using CSV, DataFrames, GLM, Plots, TypedTables
+path = "data/CAR DETAILS FROM CAR DEKHO.csv"
+cars = CSV.read(path, DataFrame)
 # cars
 
 # describe(cars)
