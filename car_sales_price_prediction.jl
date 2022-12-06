@@ -1,7 +1,4 @@
-using CSV, DataFrames, MLJ, Plots
+# Selling price predictions
+using CSV, DataFrames, MLJ, Plots, TypedTables
 
-cars = CSV.read("data/CAR DETAILS FROM CAR DEKHO.csv",DataFrame)
-cars
-
-describe(cars)
 
