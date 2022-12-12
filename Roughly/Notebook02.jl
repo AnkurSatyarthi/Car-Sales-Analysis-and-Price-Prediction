@@ -242,6 +242,19 @@ x>1 && x<10 && x isa Int
 x < 0 && error("expected positive x")
 # Short-circuiting boolean OR
 false || true || println("neither is true!")
+# Base.isapprox - Function
+isapprox(0.1,0.15;atol=0.05)
+isapprox(0.1,0.15;rtol=0.34)
+isapprox(0.1,0.15;rtol=0.33)
+0.1+1e-10≈0.1
+1e-10≈0
+isapprox(1e-10,0,atol=1e-8)
+isapprox([10.0^9,1.0],[10.0^9,2.0]) # using 'norm'
+
+
+
+
+
 
 
 
