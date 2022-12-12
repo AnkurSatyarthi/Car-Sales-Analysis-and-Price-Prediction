@@ -256,9 +256,9 @@ sin(5)
 cos(5)
 # Base.Math.sincos - Method
 sincos(5)
-
-
-
+# Base.tan - Method
+tan(5)
+sin(5)/cos(5)
 
 
 
