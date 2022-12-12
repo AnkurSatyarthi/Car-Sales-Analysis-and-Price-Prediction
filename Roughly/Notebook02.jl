@@ -267,6 +267,15 @@ cosd(5)
 tand(5)
 # Base.Math.sincosd - Function
 sincosd(5)
-# Base.Math.sinpi - Function : (Compute sin(πx) more accurately than sin(pi*x), especially for large x.)
+# Base.Math.sinpi - Function : Compute sin(πx) more accurately than sin(pi*x), especially for large x.
 sinpi(5)
+# Base.Math.sincospi - Function : Simultaneously compute sinpi(x) and cospi(x) (the sine and cosine of π*x, where x is in radians),
+# returning a tuple (sine, cosine).
+sincospi(5)
+
+
+
+
+
+
 
