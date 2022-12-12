@@ -282,10 +282,13 @@ cospi(5)
 # Base.Math.sincospi - Function : Simultaneously compute sinpi(x) and cospi(x) (the sine and cosine of π*x, where x is in radians),
 # returning a tuple (sine, cosine).
 sincospi(5)
-
-
-
-
+# Base.sinh - Method
+sinh(5)
+# Base.cosh - Method
+cosh(5)
+sinh(5)/cosh(5)
+# Base.tanh - Method
+tanh(5)
 
 
 
