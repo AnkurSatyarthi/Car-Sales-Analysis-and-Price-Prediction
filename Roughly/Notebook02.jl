@@ -28,6 +28,7 @@ inv(A) * x
 # Exponent
 ^(2,3)
 2^3
+# Matrix
 A = [1 2; 3 4]
 A^3
 fma(1, 2, 3)
