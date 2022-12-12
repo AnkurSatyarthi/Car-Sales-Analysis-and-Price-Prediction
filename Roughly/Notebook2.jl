@@ -53,6 +53,22 @@ fld(6.0,0.1)
 cld(5.5,2.2)
 cld.(-5:5, 3)'
 mod(0, Base.OneTo(3)) # mod1(0, 3)
+mod(3, 0:2) # mod(3, 3)
+mod(8,3)
+mod(9,3)
+mod(8.9,3)
+mod(eps(),3)
+mod(-eps(),3)
+mod.(-5:5, 3)'
+129%Int8
+rem(2,3)
+%(2,3)
+x = 15; y = 4;
+x%y
+x == div(x, y) * y + rem(x, y)
+rem.(-5:5,3)'
+rem2pi(7pi/4, RoundNearest)
+rem2pi(7pi/4, RoundDown)
 
 
 
