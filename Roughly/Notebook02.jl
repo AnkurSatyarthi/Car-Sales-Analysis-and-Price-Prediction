@@ -293,7 +293,14 @@ tanh(5)
 asin(1)
 # Base.acos - Method : Compute the inverse cosine of x, where the output is in radians
 acos(1)
-
+# Base.atan - Method : Compute the inverse tangent of y or y/x, respectively.
+# For one argument, this is the angle in radians between the positive x-axis and the point (1, y), returning
+# a value in the interval [−π/2, π/2].
+# For two arguments, this is the angle in radians between the positive x-axis and the point (x, y), returning
+# a value in the interval [−π, π]. This corresponds to a standard atan2 function. Note that by convention
+# atan(0.0,x) is defined as π and atan(-0.0,x) is defined as −π when x < 0.
+atan(5)
+atan(5, 1)
 
 
 
