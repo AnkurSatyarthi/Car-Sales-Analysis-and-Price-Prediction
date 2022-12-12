@@ -301,6 +301,9 @@ acos(1)
 # atan(0.0,x) is defined as π and atan(-0.0,x) is defined as −π when x < 0.
 atan(5)
 atan(5, 1)
-
-
-
+# Base.Math.asind - Function : Compute the inverse sine of x, where the output is in degrees. If x is a matrix,
+# x needs to be a square matrix.
+asind(1)
+# Base.Math.acosd - Function : Compute the inverse cosine of x, where the output is in degrees. If x is a matrix,
+# x needs to be a square matrix.
+acosd(1)
