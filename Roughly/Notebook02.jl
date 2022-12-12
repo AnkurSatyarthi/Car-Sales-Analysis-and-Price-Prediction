@@ -282,12 +282,12 @@ cospi(5)
 # Base.Math.sincospi - Function : Simultaneously compute sinpi(x) and cospi(x) (the sine and cosine of π*x, where x is in radians),
 # returning a tuple (sine, cosine).
 sincospi(5)
-# Base.sinh - Method
+# Base.sinh - Method : Compute hyperbolic sine of x.
 sinh(5)
-# Base.cosh - Method
+# Base.cosh - Method : Compute hyperbolic cosine of x.
 cosh(5)
 sinh(5)/cosh(5)
-# Base.tanh - Method
+# Base.tanh - Method : Compute hyperbolic tangent of x.
 tanh(5)
 # Base.asin - Method : Compute the inverse sine of x, where the output is in radians.
 asin(1)
