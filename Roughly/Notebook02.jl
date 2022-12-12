@@ -259,8 +259,11 @@ sincos(5)
 # Base.tan - Method
 tan(5)
 sin(5)/cos(5)
-
-
-
+# Base.Math.sind - Function
+sind(5)
+# Base.Math.cosd - Function
+cosd(5)
+# Base.Math.tand - Function
+tand(5)
 
 
