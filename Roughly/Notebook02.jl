@@ -130,5 +130,43 @@ range(1,100,step=5)
 range(stop=10,length=5)
 range(stop=10,step=1,length=5)
 range(start=1,step=1,stop=10)
+range(; stop=6)
+range(; stop=6.5)
+range(1,3.5,step=2)
+Base.OneTo(100)
+1!=2
+"ankur"≠"akash"
+==(1,2)
+!=(1,2)
+≠(1,2)
+!==(1,2)
+≢(1,2)
+a=[1,2];b=[1,2]; a≢b
++(1,2,3)
++(1,2,3);
++(4,5,6)
+a≢a
+<(1,2)
+"a"<"b"
+"abc"<"abd"
+1<2
+3<2
+<(5)
+<=(1,2)
+<=(1,2)
+≤(1,2)
+# Less-than-or-equals comparison operator. Falls back to (x < y) | (x == y).
+'a' <= 'b'
+7 ≤ 7 ≤ 9
+"abc" ≤ "abc"
+1<=2
+<=(2)
+>(1,2)
+>(1,2)==2<1
+1>2>3>4>5
+5>3
+
+
+
 
 
