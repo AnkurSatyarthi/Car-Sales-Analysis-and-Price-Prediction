@@ -240,5 +240,9 @@ filter(!isletter,str)
 x=5;
 x>1 && x<10 && x isa Int
 x < 0 && error("expected positive x")
+# Short-circuiting boolean OR
+false || true || println("neither is true!")
+
+
 
 
