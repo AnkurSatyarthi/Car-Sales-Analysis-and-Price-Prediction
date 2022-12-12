@@ -1,0 +1,134 @@
+-[1 2; 3 4]
++(5, 9)
+1 + 20 + 4
++(1, 20, 4)
+*(13,31)
+/(13,31)
+1/2
+4.5/2
+4\2
+4/2
+5 == 4*2
+5 === 4*2
+A = Float64[1 4 5; 3 9 2]; B = Float64[1 4 2; 3 4 2; 8 7 1];
+X = A / B
+isapprox(A, X*B)
+isapprox(X, A*pinv(B))
+/(5,3)
+\(5,3)
+inv(3) * 6
+3 \ 6
+A = [4 3; 2 1]; x = [5, 6];
+A \ x
+inv(A) * x
+^(2,3)
+2^3
+A = [1 2; 3 4]
+A^3
+fma(1, 2, 3)
+muladd(1,2,3)
+1*2+3
+A=[1.0 2.0; 3.0 4.0]; B=[1.0 1.0; 1.0 1.0]; z=[0, 100];
+muladd(A, B, z)
+inv(2)
+inv(10)
+inv(1)
+inv(1+2im)
+inv(1+2im)*(1+2im)
+inv(2//3)
+div(2,3)
+÷(2,3)
+2/3
+2//3
+2\3
+2÷3
+-3÷2
+3÷2
+div.(-5:5, 3)'
+fld(7.3,5.5)
+fld.(-5:5, 3)'
+fld(6.0,0.1)
+6.0/0.1
+6.0/big(0.1)
+cld(5.5,2.2)
+cld.(-5:5, 3)'
+mod(0, Base.OneTo(3)) # mod1(0, 3)
+mod(3, 0:2) # mod(3, 3)
+mod(8,3)
+mod(9,3)
+mod(8.9,3)
+mod(eps(),3)
+mod(-eps(),3)
+mod.(-5:5, 3)'
+129%Int8
+rem(2,3)
+%(2,3)
+x = 15; y = 4;
+x%y
+x == div(x, y) * y + rem(x, y)
+rem.(-5:5,3)'
+rem2pi(7pi/4, RoundNearest)
+rem2pi(7pi/4, RoundDown)
+mod2pi(9*pi/4)
+# divrem(x,y,r::RoundingMode=RoundToZero)
+divrem(3,7)
+divrem(7,3)
+x=15; y=4;
+fld1(x,y)
+x===fld(x,y)*y+mod(x,y)
+x===(fld1(x,y)-1)*y+mod1(x,y)
+mod1(4,2)
+mod1.(-5:5,3)'
+mod1.([-0.1,0,0.1,1,2,2.9,3,3.1]',3)
+1//2
+(1//2)//(3//4)
+rationalize(1.2)
+rationalize(0.999999)
+a = rationalize(BigInt, 3.12)
+22/7
+rationalize(3.142857142857143)
+rationalize(BigInt, 3.142857142857143)
+typeof(numerator(a))
+numerator(5)
+numerator(2//3)
+numerator(4)
+numerator(2)
+numerator(1//2)
+denominator(1//2)
+Int8(3)<<2
+Int8(1)<<2
+bitstring(Int8(1))
+bitstring(Int16(11664))
+bitstring(Int8(11))
+B = BitVector([true,false,true,false,false])
+B<<1
+B<<-1
+Int8(13)>>2
+bitstring(Int8(13))
+bitstring(Int8(3))
+Int8(-14)>>2
+bitstring(Int8(-14))
+bitstring(Int8(-4))
+B = BitVector([true,false,true,false,false])
+B>>1
+B>>-1
+Int8(-14) >>> 2
+bitstring(Int8(-14))
+bitstring(Int8(60))
+bitrotate(UInt8(114),2)
+bitstring(bitrotate(0b01110010,2))
+bitstring(bitrotate(0b01110010,-2))
+bitstring(bitrotate(0b01110010,8))
+I = CartesianIndex(2,1); J = CartesianIndex(3,3); I:J
+I:CartesianIndex(1,2):J
+range(1,length=100)
+range(1,stop=100)
+range(1,step=5,length=100)
+range(1,step=5,stop=100)
+range(1,10,length=101)
+range(1,100,step=5)
+range(stop=10,length=5)
+range(stop=10,step=1,length=5)
+range(start=1,step=1,stop=10)
+
+
