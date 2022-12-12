@@ -254,7 +254,8 @@ isapprox([10.0^9,1.0],[10.0^9,2.0]) # using 'norm'
 sin(5)
 # Base.cos - Method
 cos(5)
-
+# Base.Math.sincos - Method
+sincos(5)
 
 
 
