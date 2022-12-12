@@ -265,5 +265,8 @@ sind(5)
 cosd(5)
 # Base.Math.tand - Function
 tand(5)
-
+# Base.Math.sincosd - Function
+sincosd(5)
+# Base.Math.sinpi - Function : (Compute sin(πx) more accurately than sin(pi*x), especially for large x.)
+sinpi(5)
 
