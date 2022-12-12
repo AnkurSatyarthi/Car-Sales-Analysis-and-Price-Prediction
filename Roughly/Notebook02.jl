@@ -165,8 +165,63 @@ a≢a
 >(1,2)==2<1
 1>2>3>4>5
 5>3
-
-
-
-
-
+>(5)
+>=(1,2)
+≥(1,2)
+'a'>='b'
+1 ≥ 2 ≥ 3
+"abc" ≥ "abc"
+1 ≥ 2
+cmp(1,2)
+cmp(2,1)
+cmp(2+im,3-im)
+cmp(<,1,2)
+cmp("abc","abc")
+cmp("ab","abc")
+cmp("abc","ab")
+cmp("ab","ac")
+cmp("α", "a")
+cmp("b", "β")
+# Bitwise operator
+~(1)
+~(3)
+~(2)
+~(0)
+~(-1)
+~(-2)
+~10
+~true
+~false
+~0
+~-1
+1&2
+1&3
+1&5
+2&5
+2&6
+108&11664
+(&)(1,2)
+4&10
+4&12
+true&missing
+false&missing
+# Bitwise or
+4|10
+1|2
+3|2
+99|1
+true|missing
+false|missing
+# Xor 
+xor(1,2)
+xor(true,false)
+xor(true,true)
+xor(true,missing)
+false ⊻ false
+[true; true; false] .⊻ [true; false; false]
+# Base.nand(x,y)
+nand(true,false)
+nand(true,true)
+nand(true,missing)
+false false
+[true; true; false] . [true; false; false]
