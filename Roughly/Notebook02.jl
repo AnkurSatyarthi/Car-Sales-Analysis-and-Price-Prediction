@@ -223,3 +223,13 @@ false ⊻ false
 nand(true,false)
 nand(true,true)
 nand(true,missing)
+# nor
+nor(true,false)
+nor(true,true)
+nor(true,missing)
+
+
+
+
+
+
