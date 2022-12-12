@@ -223,5 +223,3 @@ false ⊻ false
 nand(true,false)
 nand(true,true)
 nand(true,missing)
-false false
-[true; true; false] . [true; false; false]
