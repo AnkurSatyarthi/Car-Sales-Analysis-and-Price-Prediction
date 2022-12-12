@@ -252,6 +252,8 @@ isapprox(1e-10,0,atol=1e-8)
 isapprox([10.0^9,1.0],[10.0^9,2.0]) # using 'norm'
 # Base.sin - Method
 sin(5)
+# Base.cos - Method
+cos(5)
 
 
 
