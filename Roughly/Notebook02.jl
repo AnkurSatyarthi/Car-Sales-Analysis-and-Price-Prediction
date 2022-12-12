@@ -289,6 +289,10 @@ cosh(5)
 sinh(5)/cosh(5)
 # Base.tanh - Method
 tanh(5)
+# Base.asin - Method : Compute the inverse sine of x, where the output is in radians.
+asin(1)
+
+
 
 
 
