@@ -250,7 +250,8 @@ isapprox(0.1,0.15;rtol=0.33)
 1e-10≈0
 isapprox(1e-10,0,atol=1e-8)
 isapprox([10.0^9,1.0],[10.0^9,2.0]) # using 'norm'
-
+# Base.sin - Method
+sin(5)
 
 
 
