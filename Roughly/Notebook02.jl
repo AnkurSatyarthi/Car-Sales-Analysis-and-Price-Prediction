@@ -227,9 +227,9 @@ nand(true,missing)
 nor(true,false)
 nor(true,true)
 nor(true,missing)
-
-
-
-
+# Boolean not
+!true
+!false
+!missing
 
 
