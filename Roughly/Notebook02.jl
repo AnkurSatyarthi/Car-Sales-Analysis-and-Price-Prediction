@@ -1,3 +1,5 @@
+# Roughly Notebook 02
+# Arithmetic operators and Functions
 -[1 2; 3 4]
 +(5, 9)
 1 + 20 + 4
