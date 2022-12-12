@@ -25,12 +25,14 @@ inv(3) * 6
 A = [4 3; 2 1]; x = [5, 6];
 A \ x
 inv(A) * x
-# Exponent
+# Exponentials
 ^(2,3)
 2^3
 # Matrix
 A = [1 2; 3 4]
+# exponential operation on matrix
 A^3
+# x * y + z operations using fma and muladd functions
 fma(1, 2, 3)
 muladd(1,2,3)
 1*2+3
