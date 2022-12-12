@@ -12,6 +12,7 @@
 5 === 4*2
 A = Float64[1 4 5; 3 9 2]; B = Float64[1 4 2; 3 4 2; 8 7 1];
 X = A / B
+# isapprox
 isapprox(A, X*B)
 isapprox(X, A*pinv(B))
 /(5,3)
