@@ -236,6 +236,9 @@ nor(true,missing)
 str = "∀ ε > 0, ∃ δ > 0: |x-y| < δ ⇒ |f(x)-f(y)| < ε"
 filter(isletter,str)
 filter(!isletter,str)
-
+# Short-circuiting boolean AND (AND keyword)
+x=5;
+x>1 && x<10 && x isa Int
+x < 0 && error("expected positive x")
 
 
