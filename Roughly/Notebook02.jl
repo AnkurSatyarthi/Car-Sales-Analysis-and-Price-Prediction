@@ -231,5 +231,11 @@ nor(true,missing)
 !true
 !false
 !missing
+# !f::Function
+# Predicate function negation: when the argument of ! is a function, it returns a function which computes the boolean negation of f.
+str = "∀ ε > 0, ∃ δ > 0: |x-y| < δ ⇒ |f(x)-f(y)| < ε"
+filter(isletter,str)
+filter(!isletter,str)
+
 
 
