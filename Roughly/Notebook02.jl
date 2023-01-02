@@ -314,5 +314,6 @@ string(1+2)
 string(3*4);
 # ans
 ans
+# rand(2,2)
 rand(2,2)
 show(IOContext(stdout, :compact => false), "text/plain", rand(2,2))
