@@ -325,3 +325,5 @@ using Random
 #rand() function with integers
 rand((2,3))
 rand((1,2,3,4,5,6))
+# rand() function with Float64
+rand(Float64, (2,3))
