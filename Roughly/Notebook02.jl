@@ -307,3 +307,10 @@ asind(1)
 # Base.Math.acosd - Function : Compute the inverse cosine of x, where the output is in degrees. If x is a matrix,
 # x needs to be a square matrix.
 acosd(1)
+
+# string(1+2)
+string(1+2)
+string(3*4);
+ans
+rand(2,2)
+show(IOContext(stdout, :compact => false), "text/plain", rand(2,2))
