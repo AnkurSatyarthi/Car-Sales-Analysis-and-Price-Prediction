@@ -310,6 +310,7 @@ acosd(1)
 
 # string(1+2)
 string(1+2)
+# string(3*4)
 string(3*4);
 ans
 rand(2,2)
