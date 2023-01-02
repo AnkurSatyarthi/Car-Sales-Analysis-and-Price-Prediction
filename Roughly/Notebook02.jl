@@ -322,5 +322,6 @@ show(IOContext(stdout, :compact => false), "text/plain", rand(2,2))
 rand(Int, 2)
 # using Random
 using Random
+#rand() function with integers
 rand((2,3))
 rand((1,2,3,4,5,6))
