@@ -1,5 +1,5 @@
 # Car-Sales-Analysis-and-Price-Prediction
-
+<!--
 ## Car Sales Analysis :
 - Here we are going to analyse *Car sales* and relationships between them.
     + Relationships between *sales prices* and *year*.
@@ -25,3 +25,4 @@ Here we are going to make *predictions* on *sales prices*
     + 
     + 
     + 
+-->
