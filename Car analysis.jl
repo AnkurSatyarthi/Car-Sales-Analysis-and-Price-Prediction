@@ -10,15 +10,15 @@ km_driven = cars.km_driven
 # Relationship b/w years and selling prices
 # years_and_selling_prices = scatter(cars.year,cars.selling_price)
 # Relationship b/w years and km drivens
-# years_and_km_driven = @df cars scatter(x=cars.km_driven,
-                                        # :km_driven,
-                                        # :selling_price,
-                                        # y=cars.selling_price,
-                                        # ms=5,
-                                        # ma=0.5,
-                                        # title="Relationship between km driven and selling prices",
-                                        # xlabel="km driven",
-                                        # ylabel="selling_price")
+years_and_km_driven = @df cars scatter(x=cars.km_driven,
+                                        :km_driven,
+                                        :selling_price,
+                                        y=cars.selling_price,
+                                        ms=5,
+                                        ma=0.5,
+                                        title="Relationship between km driven and selling prices",
+                                        xlabel="km driven",
+                                        ylabel="selling_price")
 # vscodedisplay(cars)
 scatter(x,Y,ms=5,ma=0.5,title="Relationship between km driven and selling prices",lw=1,xlabel="km driven",ylabel="selling price")
 @df cars plot(:selling_price)
