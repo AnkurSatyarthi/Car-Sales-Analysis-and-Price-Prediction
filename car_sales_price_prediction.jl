@@ -71,3 +71,4 @@ end
 # epochs+=1
 # plot!(X,y_hat,color=:red,alpha=0.5,
 #     title="Car Selling Prices (epochs = $epochs")
+
