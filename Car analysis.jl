@@ -4,6 +4,7 @@ cars = DataFrame(CSV.File("data/CAR DETAILS FROM CAR DEKHO.csv"))
 describe(cars)
 first(cars,5)
 last(cars,5)
+names(cars)
 year = cars.year
 selling_price = cars.selling_price
 km_driven = cars.km_driven
