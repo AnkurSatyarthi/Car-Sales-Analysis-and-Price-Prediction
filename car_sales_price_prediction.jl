@@ -10,9 +10,9 @@ years_and_km_driven = @df cars scatter(X,
                                         ms=5,
                                         ma=0.5,
                                         lw=1,
-                                        title="Car selling prices",
+                                        title="Car selling prices - Ankur Satyarthi",
                                         xlabel = "KM DRIVEN (In thousands)",
-                                        ylabel = "PRICE (In thousands of dollars)",
+                                        ylabel = "PRICE (In thousands of Rupees, ref: CarDekho)",
                                         legend = false,
                                         color = :skyblue)
 t = Table(X = X, Y = Y)

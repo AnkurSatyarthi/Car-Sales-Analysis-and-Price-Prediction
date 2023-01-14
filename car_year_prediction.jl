@@ -1,4 +1,4 @@
-using CSV, DataFrames, TypedTables, GLM, Plots
+using CSV, DataFrames, TypedTables, GLM, Plots, StatsPlot
 cars = DataFrame(CSV.File("data/CAR DETAILS FROM CAR DEKHO.csv"))
 names(cars)
 describe(cars)
