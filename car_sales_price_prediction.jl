@@ -1,19 +1,20 @@
-using DataFrames, CSV, GLM, Plots, TypedTables
+using DataFrames, CSV, GLM, Plots, TypedTables, StatsPlots
 cars = DataFrame(CSV.File("data/CAR DETAILS FROM CAR DEKHO.csv"))
 describe(cars)
 X = round.(Int,cars.km_driven/1000)
-# describe(X)
 Y = round.(Int,cars.selling_price/1000)
-# describe(Y)
-# years_and_km_driven = @df cars scatter(X,
-#                                         # :km_driven,
-#                                         # :selling_price,
-#                                         Y,
-#                                         ms=5,
-#                                         ma=0.5,
-#                                         title="Relationship between km driven and selling prices",
-#                                         xlabel="km driven",
-#                                         ylabel="selling_price")
+years_and_km_driven = @df cars scatter(X,
+                                        # :km_driven,
+                                        # :selling_price,
+                                        Y,
+                                        ms=5,
+                                        ma=0.5,
+                                        lw=1,
+                                        title="Car selling prices",
+                                        xlabel = "KM DRIVEN (In thousands)",
+                                        ylabel = "PRICE (In thousands of dollars)",
+                                        legend = false,
+                                        color = :skyblue)
 t = Table(X = X, Y = Y)
 gr(size = (600, 600))
 plot_scatter = scatter(X, Y,
@@ -72,3 +73,18 @@ plot!(X, h(X), color = :blue, linewidth = 3)
 # plot!(X,y_hat,color=:red,alpha=0.5,
 #     title="Car Selling Prices (epochs = $epochs")
 
+years_and_km_driven = @df cars scatter(X,
+                                        # :km_driven,
+                                        # :selling_price,
+                                        Y,
+                                        ms=5,
+                                        ma=0.5,
+                                        title="Relationship between km driven and selling prices",
+                                        xlabel="km driven",
+                                        ylabel="selling_price")
+# # vscodedisplay(cars)
+# scatter(X,Y,ms=5,ma=0.5,title="Relationship between km driven and selling prices",lw=1,xlabel="km driven",ylabel="selling price")
+# kmyrsprp=@df cars corrplot(cols(2:4),grid=false)
+# kmyrsprp=@df cars corrplot(cols(3:4),grid=false,title="selling_price and ")
+# save("km_driven,selling_price, and rp.svg",years_and_km_driven)
+# save("km_driven,selling_price, and rp.pdf",kmyrsprp)
