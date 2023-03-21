@@ -12,7 +12,9 @@ title="Car selling prices (epochs = $epochs)",legend=false);theta_0=0.0;theta_1=
 m=length(X);y_hat=h(X);cost(X,Y)=(1/(2*m))*sum((y_hat-Y).^2);J=cost(X,Y);J_history=[];push!(J_history, J);pd_theta_0(X,Y)=(1/m)*sum(y_hat-Y);pd_theta_1(X,Y)=(1/m)*sum((y_hat-Y).*X);
 alpha_0=0.01;alpha_1=0.000008;
 begin
-    theta_0_temp = pd_theta_0(X,Y);theta_1_temp = pd_theta_1(X,Y);theta_0 -= alpha_0*theta_0_temp;theta_1 -= alpha_1*theta_1_temp;y_hat=h(X);J=cost(X,Y);push!(J_history, J)
-    epochs+=1;plot!(X,y_hat,color=:red,alpha=0.5,title="Car Selling Prices (epochs = $epochs)")
+    for i in 1:1000
+        theta_0_temp = pd_theta_0(X,Y);theta_1_temp = pd_theta_1(X,Y);theta_0 -= alpha_0*theta_0_temp;theta_1 -= alpha_1*theta_1_temp;y_hat=h(X);J=cost(X,Y);push!(J_history, J)
+        epochs+=1;
+    end
+    plot!(X,y_hat,color=:green,alpha=0.5,title="Car Selling Prices - Ankur Satyarthi(epochs = $epochs)")
 end
-
